@@ -1,0 +1,114 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .title {
+    background: #a50000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .sottotitolo, .contattaci {
+    text-align: center;
+    padding: 1rem;
+    background: #fff3e6;
+    margin-top: 1rem;
+    border-top: 2px solid #a50000;
+    border-bottom: 2px solid #a50000;
+  }
+  
+  .sottotitolo p, .contattaci p {
+    max-width: 600px;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+  }
+  
+  .sottotitolo a, .contattaci a {
+    color: #a50000;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #a50000;
+    border-radius: 10px;
+  }
+  
+  button {
+    background: #a50000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    margin: 2rem auto 1rem auto;
+    display: block;
+  }
+  
+  #menuPizze {
+    margin: 1rem auto 3rem auto;
+    padding: 0 1rem;
+    max-width: 500px;
+    display: none;
+    color: #333;
+    font-family: Georgia, serif;
+  }
+  
+  #menuPizze h2 {
+    text-align: center;
+    color: #a50000;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #menuPizze ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  
+  #menuPizze li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sottotitolo {
+      display: none; 
+    }
+    .contattaci {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .sottotitolo {
+      display: block;
+    }
+    .contattaci {
+      display: none;
+    }
+  }
+  
+  
